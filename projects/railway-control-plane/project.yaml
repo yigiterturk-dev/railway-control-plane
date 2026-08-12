@@ -1,0 +1,11 @@
+project:
+  name: Railway Control Plane
+  slug: railway-control-plane
+  mode: new
+  type: web-app
+  sector: developer tools / cloud infrastructure
+  parent_project: null
+  gate: 6
+  created_at: 2026-08-12T20:00:00+03:00
+  owner: Yigit Erturk
+  production_approval_owner: Yigit Erturk

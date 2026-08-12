@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 18% 97%; --foreground: 215 25% 12%; --border: 214 14% 87%;
+  --card: 210 20% 99%; --card-foreground: 215 25% 12%; --card-border: 214 14% 87%;
+  --popover: 210 20% 99%; --popover-foreground: 215 25% 12%; --popover-border: 214 14% 87%;
+  --primary: 154 62% 32%; --primary-foreground: 150 30% 98%; --secondary: 212 14% 92%; --secondary-foreground: 215 25% 12%;
+  --muted: 212 14% 93%; --muted-foreground: 215 10% 42%; --accent: 212 14% 92%; --accent-foreground: 215 25% 12%;
+  --destructive: 5 66% 43%; --destructive-foreground: 0 0% 98%; --input: 214 14% 78%; --ring: 154 62% 32%;
+  --sidebar: 216 20% 9%; --sidebar-foreground: 210 17% 92%; --sidebar-border: 215 13% 19%;
+  --sidebar-primary: 151 54% 53%; --sidebar-primary-foreground: 216 20% 7%; --sidebar-accent: 215 15% 15%; --sidebar-accent-foreground: 210 17% 96%; --sidebar-ring: 151 54% 53%;
+  --chart-1: 154 62% 32%; --chart-2: 34 78% 39%; --chart-3: 5 66% 43%; --chart-4: 200 55% 40%; --chart-5: 215 10% 42%;
+  --font-sans: "General Sans", Inter, ui-sans-serif, system-ui, sans-serif; --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; --radius: .5rem;
+  --primary-border: hsl(var(--primary)); --secondary-border: hsl(var(--border)); --muted-border: hsl(var(--border)); --accent-border: hsl(var(--border)); --destructive-border: hsl(var(--destructive)); --sidebar-primary-border: hsl(var(--sidebar-primary)); --sidebar-accent-border: hsl(var(--sidebar-border));
+}
+.dark {
+  --background: 216 20% 7%; --foreground: 210 17% 92%; --border: 215 13% 19%; --card: 216 18% 10%; --card-foreground: 210 17% 92%; --card-border: 215 13% 19%;
+  --popover: 216 18% 10%; --popover-foreground: 210 17% 92%; --popover-border: 215 13% 19%; --primary: 151 54% 53%; --primary-foreground: 216 20% 7%;
+  --secondary: 215 15% 15%; --secondary-foreground: 210 17% 92%; --muted: 215 15% 14%; --muted-foreground: 215 10% 63%; --accent: 215 15% 15%; --accent-foreground: 210 17% 92%;
+  --destructive: 5 70% 61%; --destructive-foreground: 216 20% 7%; --input: 215 13% 27%; --ring: 151 54% 53%; --sidebar: 216 23% 5%; --sidebar-foreground: 210 17% 92%; --sidebar-border: 215 13% 16%;
+  --sidebar-primary: 151 54% 53%; --sidebar-primary-foreground: 216 20% 7%; --sidebar-accent: 215 15% 12%; --sidebar-accent-foreground: 210 17% 96%; --sidebar-ring: 151 54% 53%;
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
+  body { @apply m-0 bg-background font-sans text-foreground antialiased; min-width: 320px; }
+  button, a, input, select { @apply outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background; }
+  ::selection { background: hsl(var(--primary) / .2); }
+}
+
+@layer components {
+  .eyebrow { @apply font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-muted-foreground; }
+  .mode-badge { @apply inline-flex min-h-7 items-center gap-1.5 rounded-full border border-primary/20 bg-primary/10 px-2.5 font-mono text-[10px] font-semibold uppercase tracking-[0.08em] text-primary; }
+  .main-canvas { @apply mx-auto flex w-full max-w-[1600px] flex-col gap-6 px-4 py-6 sm:px-6 lg:px-8 lg:py-8; }
+  .context-band { @apply grid gap-6 border-b border-border pb-6 lg:grid-cols-[minmax(0,1fr)_420px] lg:items-end; }
+  .context-meta { @apply grid grid-cols-1 divide-y divide-border border-y border-border sm:grid-cols-3 sm:divide-x sm:divide-y-0; }
+  .context-meta div { @apply flex min-w-0 flex-col gap-1 py-3 sm:px-4; }
+  .context-meta span { @apply font-mono text-[9px] uppercase tracking-[0.12em] text-muted-foreground; }
+  .context-meta strong { @apply truncate text-xs font-medium; }
+  .command-band { @apply flex flex-col justify-between gap-5 border border-border bg-card p-4 sm:p-6 xl:flex-row xl:items-end; }
+  .operation-grid { @apply grid gap-6 xl:grid-cols-[minmax(0,2fr)_minmax(280px,1fr)]; }
+  .rail-panel, .evidence-panel, .ledger-panel { @apply border border-border bg-card; }
+  .rail-panel { @apply overflow-hidden p-4 sm:p-6; background-image: linear-gradient(hsl(var(--border)/.28) 1px, transparent 1px); background-size: 100% 32px; }
+  .evidence-panel { @apply flex min-h-full flex-col gap-6 p-4 sm:p-6; }
+  .evidence-list { @apply divide-y divide-border border-y border-border; }
+  .evidence-list div { @apply grid grid-cols-[110px_minmax(0,1fr)] items-center gap-4 py-3; }
+  .evidence-list dt { @apply font-mono text-[10px] uppercase tracking-[0.08em] text-muted-foreground; }
+  .evidence-list dd { @apply min-w-0 truncate text-right text-xs font-medium; }
+  .workflow-rail { @apply grid gap-0 md:grid-cols-5; }
+  .workflow-stage { @apply relative grid min-h-[76px] grid-cols-[28px_1fr] gap-3 border-l border-border py-2 md:min-h-[112px] md:grid-cols-1 md:border-l-0 md:border-t md:pt-5; }
+  .stage-line { @apply absolute left-[13px] top-0 h-full w-px overflow-hidden bg-border md:left-0 md:top-[-1px] md:h-px md:w-full; }
+  .stage-line span { @apply block h-0 w-full origin-top bg-primary transition-transform duration-200 md:h-full md:w-full md:origin-left md:scale-x-0; }
+  .workflow-stage.is-complete .stage-line span { @apply h-full md:scale-x-100; }
+  .stage-node { @apply relative z-[1] grid size-7 place-items-center rounded-full border border-border bg-card text-muted-foreground; }
+  .workflow-stage.is-complete .stage-node { @apply border-primary bg-primary text-primary-foreground; }
+  .workflow-stage.is-active .stage-node { @apply border-primary text-primary ring-4 ring-primary/10; }
+  .workflow-stage.is-failed .stage-node { @apply border-destructive text-destructive ring-destructive/10; }
+  .stage-copy { @apply flex flex-col gap-1 pt-1 md:pr-3; }
+  .ledger-columns { grid-template-columns: minmax(160px,1.6fr) minmax(90px,.7fr) minmax(110px,.8fr) minmax(150px,1fr) 20px; }
+  .ledger-summary { @apply grid w-full grid-cols-[32px_minmax(0,1fr)_auto_20px] items-center gap-3 border-b border-border px-4 py-4 text-left hover:bg-muted/40 sm:grid-cols-[32px_minmax(160px,1.6fr)_minmax(90px,.7fr)_minmax(150px,1fr)_20px] sm:px-6 lg:grid-cols-[32px_minmax(160px,1.6fr)_minmax(90px,.7fr)_minmax(110px,.8fr)_minmax(150px,1fr)_20px]; }
+  .ledger-icon { @apply grid size-8 place-items-center rounded-full border border-border text-muted-foreground; }
+  .ledger-icon.success { @apply border-primary/25 bg-primary/10 text-primary; }
+  .ledger-icon.failure { @apply border-destructive/25 bg-destructive/10 text-destructive; }
+  .ledger-detail-grid { display: grid; grid-template-rows: 0fr; opacity: .6; transition: grid-template-rows 160ms ease-out, opacity 160ms ease-out; }
+  .ledger-detail-grid > div { @apply overflow-hidden px-6; }
+  .ledger-detail-grid.is-open { grid-template-rows: 1fr; opacity: 1; }
+  .ledger-detail-grid.is-open > div { @apply border-b border-border py-3; }
+  .empty-ledger { @apply grid min-h-48 place-items-center content-center gap-2 px-5 text-center text-sm text-muted-foreground; }
+  .empty-ledger span { @apply text-xs; }
+  .proof-band { @apply flex flex-col justify-between gap-5 border-y border-border py-6 lg:flex-row lg:items-center; }
+  .architecture-flow { @apply my-4 grid items-center gap-2 border-y border-border py-4 text-center text-xs font-medium sm:grid-flow-col; }
+  .architecture-flow span { @apply rounded-md bg-muted px-3 py-3; }
+  .error-banner { @apply border-l-2 border-destructive bg-destructive/10 px-4 py-3 text-sm text-destructive; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

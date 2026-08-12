@@ -1,0 +1,33 @@
+project_dna:
+  version: 1.0.0
+  strategic_insight: >-
+    Infrastructure control panels become trustworthy when every opaque cloud action is turned into a legible state transition with evidence, recovery, and ownership.
+  primary_narrative:
+    - Orient the reviewer with current connection and service health.
+    - Expose one unambiguous lifecycle action.
+    - Show the workflow moving through explicit states rather than hiding latency.
+    - Preserve a readable activity ledger that explains what happened and why.
+    - Reveal architecture, safeguards, and extension points as evidence of engineering judgment.
+  visual_thesis: >-
+    A precise operational ledger: restrained neutral surfaces, terminal-informed typography, thin data rules, and a single railway-signal green accent used only for actionable or healthy state.
+  signature_behavior: >-
+    A lifecycle action travels through a visible horizontal state rail - requested, validated, dispatched, observed, settled - with the active stage advancing in place and collapsing into the activity ledger.
+  content_proof:
+    - Working Railway GraphQL adapter with demo and live modes.
+    - Typed workflow state machine with retry and idempotency behavior.
+    - Automated tests and CI.
+    - Public architecture decision records and threat model.
+    - Deployed demo and reproducible setup.
+  forbidden_patterns:
+    - Generic purple SaaS gradients or neon cloud imagery.
+    - Symmetrical three-card feature grids.
+    - Fake terminal decoration that does not expose real state.
+    - Hidden destructive actions or optimistic success without verification.
+    - Inflated production-scale claims.
+    - Copying Railway's visual identity or interface.
+  uniqueness_targets:
+    - Make workflow state, not infrastructure topology, the primary composition.
+    - Use a ledger and rail metaphor rather than a generic metric-card dashboard.
+    - Treat documentation and failure recovery as first-class product surfaces.
+    - Keep the interface original and clearly independent from Railway branding.
+  evidence_status: inferred

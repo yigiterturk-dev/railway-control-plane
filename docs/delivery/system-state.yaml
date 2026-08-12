@@ -1,0 +1,31 @@
+protocol_version: NUSP-1.0
+project:
+  name: Railway Control Plane
+  slug: railway-control-plane
+  workspace: projects/railway-control-plane
+  mode: new
+project_zero:
+  gate: 6
+  status: PASS
+  project_dna_version: 1.0.0
+  reference_pool_version: 1.0.0
+delivery:
+  gate: G5
+  status: PASS
+specialists:
+  researcher: pass
+  reference_scan: pass
+  art_direction: pass
+  motion: pass
+  implementation: pass
+  visual_qa: pass
+approvals:
+  direction: approved
+  static: approved
+  release: pending
+open_decisions:
+  - Restore GitHub CLI authentication before creating and pushing the public repository.
+  - Explicitly approve external deployment after reviewing the local build.
+  - Confirm live Railway credentials and target workspace only after demo mode is verified.
+active_handoff: .nocturn/05-visual-review-handoff.yaml
+updated_at: 2026-08-12T22:58:00+03:00

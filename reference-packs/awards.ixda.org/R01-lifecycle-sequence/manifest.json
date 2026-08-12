@@ -1,0 +1,19 @@
+{
+  "protocolVersion": "NUSP-1.0",
+  "projectSlug": "railway-control-plane",
+  "referenceCardId": "R01",
+  "referencePoolVersion": "1.0.0",
+  "referenceUrl": "https://awards.ixda.org/projects/arlanda-departure-sequencing-tool.html",
+  "target": "lifecycle-sequence-and-downstream-action-communication",
+  "capturedAt": "2026-08-12T22:15:00+03:00",
+  "viewports": ["1440x900", "390x844"],
+  "assetPolicy": "metadata-only",
+  "productionCodeAllowed": false,
+  "reviewStatus": "pass-with-warnings",
+  "knownLimitations": [
+    "live-browser-capture-incomplete",
+    "no-desktop-or-mobile-screenshot",
+    "no-dom-or-computed-css-measurement",
+    "archive-reported-outcomes-not-independently-audited"
+  ]
+}

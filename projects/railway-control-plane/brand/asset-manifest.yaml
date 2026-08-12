@@ -1,0 +1,51 @@
+assets:
+  - id: wordmark
+    type: logo
+    status: TO_BE_CREATED
+    owner: project
+    license: project-owned
+    source: null
+    required_variants: [horizontal, icon]
+    ratio_or_dimensions: vector
+    mobile_behavior: icon-only below compact breakpoint
+    blocks_gate: null
+  - id: interface-icons
+    type: icon
+    status: PROVIDED
+    owner: lucide
+    license: ISC
+    source: lucide-react
+    required_variants: []
+    ratio_or_dimensions: 24x24 viewBox
+    mobile_behavior: preserve label or accessible tooltip
+    blocks_gate: null
+  - id: product-screenshots
+    type: image
+    status: TO_BE_CREATED
+    owner: project
+    license: project-owned
+    source: local verified build
+    required_variants: [desktop, mobile, workflow-detail]
+    ratio_or_dimensions: responsive
+    mobile_behavior: dedicated mobile capture
+    blocks_gate: 8
+  - id: demo-video
+    type: video
+    status: TO_BE_CREATED
+    owner: project
+    license: project-owned
+    source: local verified build
+    required_variants: [short-loop, narrated-walkthrough]
+    ratio_or_dimensions: 16:9
+    mobile_behavior: poster image and external playback
+    blocks_gate: null
+  - id: photography
+    type: image
+    status: NOT_APPLICABLE
+    owner: project
+    license: not-applicable
+    source: null
+    required_variants: []
+    ratio_or_dimensions: not-applicable
+    mobile_behavior: not-applicable
+    blocks_gate: null

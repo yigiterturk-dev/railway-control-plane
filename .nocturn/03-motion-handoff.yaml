@@ -1,0 +1,47 @@
+handoff:
+  protocol_version: NUSP-1.0
+  project_slug: railway-control-plane
+  from_role: motion-design
+  to_role: implementation
+  purpose: Implement the approved Operational Ledger direction and bounded causal motion system.
+  canonical_inputs:
+    - {path: projects/railway-control-plane/brief/project-dna.yaml, version: 1.0.0}
+    - {path: .nocturn/01-reference-dossier.md, version: 1.0.0}
+    - {path: .nocturn/02-art-direction.md, version: 1.0.0}
+    - {path: .nocturn/03-motion-contract.md, version: 1.0.0}
+  evidence_ids: [R01-C01, R02-C01, R06-C01, R09-C01]
+  approved_decisions:
+    - Motion explains server-confirmed state change and never decorates arbitrary waiting time.
+    - Two signature moments are rail advancement and verified ledger settlement.
+  rejected_decisions:
+    - Parallax, scroll hijacking, scrub, canvas, WebGL, video, and decorative loops
+    - Optimistic progress or success
+  locked:
+    - CSS-only motion primitives
+    - Reduced-motion immediate-state fallback
+    - One primary scroll region and stable layout
+  managed:
+    - Exact CSS implementation within specified durations and easing
+  open:
+    - Live polling cadence after rate-limit and latency verification
+  forbidden:
+    - Client-side credential exposure
+    - Movement without a communication purpose
+    - Success before server-side verification
+  assumptions:
+    - Deterministic demo timing is produced by the server adapter.
+  unknowns:
+    - Live Railway operation latency until credentials are supplied.
+  risks:
+    - Polling can create repeated announcements unless events are deduplicated.
+  asset_status:
+    - Project mark can be implemented as inline currentColor SVG.
+    - Screenshots remain to be created from the verified build.
+  acceptance:
+    - Schema-first implementation, typed workflow state, server-only Railway token, demo/live boundary, tests, accessibility, responsive QA.
+  user_decisions_required: []
+  changed_files:
+    - .nocturn/03-motion-contract.md
+    - .nocturn/03-motion-handoff.yaml
+  next_gate: BUILD_READY
+  production_allowed: false

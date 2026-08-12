@@ -1,0 +1,47 @@
+handoff:
+  protocol_version: NUSP-1.0
+  project_slug: railway-control-plane
+  from_role: visual-review
+  to_role: project-zero-release
+  purpose: Record the locally verified build and enumerate external release requirements.
+  canonical_inputs:
+    - {path: .nocturn/02-art-direction.md, version: 1.0.0}
+    - {path: .nocturn/03-motion-contract.md, version: 1.0.0}
+    - {path: .nocturn/04-implementation-ledger.md, version: 1.0.0}
+    - {path: .nocturn/05-visual-review.md, version: 1.0.0}
+  evidence_ids: [desktop-1440, mobile-390, mobile-menu-390, workflow-restart, workflow-stop, workflow-start, api-smoke]
+  approved_decisions:
+    - Local static, interaction, integration, accessibility, and similarity gates pass with no open P0/P1 findings.
+  rejected_decisions:
+    - Treating the intended GitHub URL or Railway deployment as already live
+    - Connecting credentials or releasing production without owner authority
+  locked:
+    - Operational Ledger visual and behavior contracts
+    - Demo mode as safe public default
+  managed:
+    - Intermediate breakpoint capture and seeded README screenshot replacement
+  open:
+    - Publish the GitHub repository after authentication is restored.
+    - Capture 1024px and 768px artifacts.
+    - Approve and perform deployment, then inspect the exact deployed identity.
+    - Optionally verify live Railway integration with owner-provided scoped credentials.
+  forbidden:
+    - Production release without Project Zero Gate 8 and Delivery G6 authority
+    - Any token in client code, repository, logs, screenshot, or chat
+  assumptions: []
+  unknowns:
+    - Live Railway operation latency and status transitions
+  risks:
+    - Public repository links remain unavailable until remote creation/push.
+  asset_status:
+    - Desktop and mobile local QA captures exist.
+    - Deployed seeded screenshot remains TO_BE_CREATED.
+  acceptance:
+    - Owner restores GitHub authentication, reviews release scope, and explicitly authorizes deployment.
+  user_decisions_required:
+    - Authorize production deployment and choose whether to connect a real Railway service.
+  changed_files:
+    - .nocturn/05-visual-review.md
+    - .nocturn/05-visual-review-handoff.yaml
+  next_gate: RELEASE_APPROVAL
+  production_allowed: false

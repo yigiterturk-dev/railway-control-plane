@@ -1,0 +1,71 @@
+handoff:
+  protocol_version: NUSP-1.0
+  project_slug: railway-control-plane
+  from_role: award-researcher
+  to_role: project-zero
+  purpose: Propose an evidence-backed 10-card reference pool and three anti-references for Gate 4 owner approval.
+  canonical_inputs:
+    - path: projects/railway-control-plane/brief/project-dna.yaml
+      version: 1.0.0
+    - path: projects/railway-control-plane/brief/core-brief.md
+      version: 1.0.0
+    - path: projects/railway-control-plane/research/research-context.yaml
+      version: 1.0.0
+  evidence_ids: [R01, R02, R03, R04, R05, R06, R07, R08, R09, R10, A01, A02, A03]
+  approved_decisions:
+    - Demo mode remains credential-free and live credentials remain server-side and optional.
+    - Documentation and repository evidence are first-class product surfaces.
+  rejected_decisions:
+    - Railway interface imitation
+    - Generic AI or SaaS gradient dashboard
+    - Decorative terminal without real state
+    - Unsupported production-scale claims
+  locked:
+    - Strategic insight and primary narrative from Project DNA 1.0.0
+    - Workflow state is primary; topology is supporting evidence
+    - Metadata-only reference asset policy
+  managed:
+    - Ten provisional reference cards
+    - Three anti-reference cards
+    - Evidence claim classification and scan priorities
+  open:
+    - Exact original interface direction
+    - Final state rail layout and responsive treatment
+    - README conversion/presentation behavior pending public reference scan
+  forbidden:
+    - Downloading, retaining, hotlinking or copying reference assets
+    - Copying CSS, DOM, layout, timelines, branded copy or proprietary code
+    - Treating award recognition as proof of usability, accessibility or commercial success
+    - Production implementation before later gate authority
+  assumptions:
+    - Archive-published project metrics are treated as attributed claims, not independent audits.
+    - Provisional approval is sufficient for Project Zero to seek owner acceptance but not to bypass Gate 4.
+  unknowns:
+    - Accessibility and performance for most candidates
+    - Current live-project availability for industrial references
+    - Hiring or conversion outcomes for developer-tool presentation candidates
+    - Exact implementation and motion behavior
+  risks:
+    - Recency and polished-case-study bias
+    - Adjacent industrial references could pull the interface toward a literal control-room aesthetic
+    - IBM Cloud Infrastructure Visualizer is a concept, not production evidence
+    - Apple-native conventions may not transfer to desktop web
+  asset_status:
+    - Reference assets: forbidden and not downloaded
+    - Project screenshots: TO_BE_CREATED from verified local build
+    - Project wordmark: TO_BE_CREATED and project-owned
+    - Demo video: TO_BE_CREATED from verified build
+  acceptance:
+    - Project owner/orchestrator approves or revises R01-R10.
+    - Project owner/orchestrator approves A01-A03 as anti-references.
+    - reference_pool_version is promoted from 1.0.0-provisional only after approval.
+    - Reference Scan receives only approved URLs and targets.
+  user_decisions_required:
+    - Approve the ten-card reference pool.
+    - Approve the three anti-references.
+  changed_files:
+    - projects/railway-control-plane/research/award-reference-research.md
+    - projects/railway-control-plane/research/reference-pool.yaml
+    - projects/railway-control-plane/research/researcher-handoff.yaml
+  next_gate: PZ4_REFERENCE_POOL_APPROVAL
+  production_allowed: false

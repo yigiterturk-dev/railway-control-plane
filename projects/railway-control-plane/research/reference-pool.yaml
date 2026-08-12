@@ -1,0 +1,131 @@
+reference_pool:
+  protocol_version: NUSP-1.0
+  version: 1.0.0
+  project_slug: railway-control-plane
+  status: APPROVED_FOR_GATE_4
+  maturity: approved
+  canonical_inputs:
+    project_dna_version: 1.0.0
+    core_brief_version: 1.0.0
+    research_context_version: 1.0.0
+  asset_policy: metadata-only
+  production_allowed: false
+  selected_references:
+    - id: R01
+      title: Arlanda Departure Sequencing Tool
+      perspective: adjacent-sector
+      official_url: https://awards.ixda.org/projects/arlanda-departure-sequencing-tool.html
+      award_name: IxDA Interaction Awards
+      year: 2016
+      score: 33
+      approval: approved
+      scan_target: lifecycle sequence, importance layering, downstream action communication
+    - id: R02
+      title: RCS 5 Boomer
+      perspective: adjacent-sector
+      official_url: https://awards.ixda.org/projects/rcs-5-boomer.html
+      award_name: IxDA Interaction Awards
+      year: 2014
+      score: 31
+      approval: approved
+      scan_target: status/event/error ledger and progressive disclosure
+    - id: R03
+      title: ESB Generation & Trading Real-Time Visualisation Application
+      perspective: adjacent-sector
+      official_url: https://ux-design-awards.com/winners/2022-1-376-rtv-esb-generation-trading-real-time-visualisation-application
+      award_name: UX Design Awards
+      year: 2022
+      score: 30
+      approval: approved
+      scan_target: source-of-truth hierarchy and data-type-specific visualization
+    - id: R04
+      title: IBM Cloud Infrastructure Visualizer
+      perspective: same-sector
+      official_url: https://awards.ixda.org/projects/ibm-cloud-infrastructure-visualizer.html
+      award_name: IxDA Interaction Awards
+      year: 2024
+      score: 29
+      approval: approved_with_concept_caveat
+      scan_target: state explanation paired with bounded remediation
+    - id: R05
+      title: Uno (AWS Finance)
+      perspective: adjacent-cloud
+      official_url: https://ux-design-awards.com/winners/2025-1-uno
+      award_name: UX Design Awards
+      year: 2025
+      score: 29
+      approval: approved
+      scan_target: evidence/provenance hierarchy and measured proof presentation
+    - id: R06
+      title: Acoustic Water Leak Detector
+      perspective: adjacent-sector
+      official_url: https://ux-design-awards.com/winners/acoustic-water-leak-detector
+      award_name: UX Design Awards
+      year: 2023
+      score: 28
+      approval: approved
+      scan_target: anomaly-to-action-to-verified-completion loop
+    - id: R07
+      title: Berkshire Grey Flex next-gen HMI
+      perspective: adjacent-sector
+      official_url: https://ux-design-awards.com/winners/berkshire-grey-flex-next-gen-hmi
+      award_name: UX Design Awards
+      year: 2023
+      score: 27
+      approval: approved
+      scan_target: automation versus human-intervention hierarchy
+    - id: R08
+      title: C.O.R.E. Machine Tool Interaction Redefined
+      perspective: adjacent-sector
+      official_url: https://ux-design-awards.com/winners/2022-1-53-c-o-r-e-machine-tool-interaction-redefined
+      award_name: UX Design Awards
+      year: 2022
+      score: 27
+      approval: approved
+      scan_target: stable lifecycle action hierarchy across resource types
+    - id: R09
+      title: Flighty
+      perspective: distant-analogy
+      official_url: https://developer.apple.com/design/awards/2023/
+      award_name: Apple Design Awards
+      year: 2023
+      score: 27
+      approval: approved
+      scan_target: ambient volatile state and wayfinding semantics
+    - id: R10
+      title: HP Workforce Experience Platform
+      perspective: adjacent-sector
+      official_url: https://ux-design-awards.com/winners/2025-2-hp-workforce-experience-platform
+      award_name: UX Design Awards
+      year: 2025
+      score: 26
+      approval: approved
+      scan_target: shared enterprise status/action semantics and accessibility
+  anti_references:
+    - id: A01
+      title: Generic metric-card dashboard
+      reject: symmetrical KPI cards and chart-first composition
+      reason: hides the lifecycle action and turns evidence into decoration
+    - id: A02
+      title: Railway identity/interface imitation
+      reject: Railway layout, colors, logo, icons, branded copy or dashboard structure
+      reason: violates originality and Similarity Guard requirements
+    - id: A03
+      title: Decorative terminal and optimistic-success theater
+      reject: fake output, premature success, hidden retries and silent destructive actions
+      reason: removes operational accountability
+  indexed_only:
+    - {id: C11, title: Cohesity Data Platform, score: 25}
+    - {id: C12, title: Patient Data Explorer, score: 25}
+    - {id: C13, title: Touching Human Lives / Iptor, score: 24}
+    - {id: C14, title: TCP Tornos Control Panel, score: 23}
+    - {id: C15, title: Resend - Email for developers, score: 21}
+    - {id: C16, title: Tailscale, score: 21}
+    - {id: C17, title: v0 from Vercel, score: 20}
+    - {id: C18, title: Harry Beck Underground diagram, score: 20}
+  approval_record:
+    date: 2026-08-12
+    authority: current explicit user instruction to continue the work
+    scope: R01-R10 approved; A01-A03 binding; no reference assets or literal compositions may be transferred
+  user_decisions_required: []
+  next_gate: PZ4_REFERENCE_POOL_APPROVED

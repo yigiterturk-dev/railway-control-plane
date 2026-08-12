@@ -1,0 +1,29 @@
+[
+  {
+    "id": "R02-C01",
+    "statement": "The official case connects monitoring/control with status, event, and error logging for later analysis.",
+    "status": "verified",
+    "evidence": ["01-evidence/source-record.md"],
+    "confidence": 0.92,
+    "scope": "official archive text; viewport-independent",
+    "reviewedBy": "reference-scan-evidence-review"
+  },
+  {
+    "id": "R02-C02",
+    "statement": "A single ledger taxonomy can support both immediate recovery and later audit in Railway Control Plane.",
+    "status": "inferred",
+    "evidence": ["01-evidence/source-record.md"],
+    "confidence": 0.78,
+    "scope": "adaptation principle only",
+    "reviewedBy": "reference-scan-evidence-review"
+  },
+  {
+    "id": "R02-C03",
+    "statement": "The exact ledger rows, disclosure controls, responsive behavior, accessibility, and visual system are known.",
+    "status": "unknown",
+    "evidence": ["01-evidence/source-record.md#access-limitation"],
+    "confidence": 0,
+    "scope": "1440x900 and 390x844",
+    "reviewedBy": "reference-scan-evidence-review"
+  }
+]

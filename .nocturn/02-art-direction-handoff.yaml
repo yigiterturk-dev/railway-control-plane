@@ -1,0 +1,47 @@
+handoff:
+  protocol_version: NUSP-1.0
+  project_slug: railway-control-plane
+  from_role: art-direction
+  to_role: motion-design
+  purpose: Translate the selected Operational Ledger direction into a bounded motion contract.
+  canonical_inputs:
+    - {path: projects/railway-control-plane/brief/project-dna.yaml, version: 1.0.0}
+    - {path: projects/railway-control-plane/research/reference-pool.yaml, version: 1.0.0}
+    - {path: .nocturn/01-reference-dossier.md, version: 1.0.0}
+    - {path: .nocturn/02-art-direction.md, version: 1.0.0}
+  evidence_ids: [R01-C01, R02-C01, R06-C01, R09-C01]
+  approved_decisions:
+    - Operational Ledger direction selected under current user continuation authority.
+    - State rail is the signature composition and resolves into the evidence ledger.
+  rejected_decisions:
+    - Infrastructure Map direction
+    - Command Console direction
+  locked:
+    - Graphite neutral system with one signal-green accent
+    - General Sans plus JetBrains Mono
+    - One primary scroll region
+    - No optimistic success or reference imitation
+  managed:
+    - Original timing, easing, feedback, and reduced-motion behavior
+  open:
+    - Exact state transition timing after implementation performance testing
+  forbidden:
+    - Decorative or continuous motion
+    - Reference timing or animation copying
+    - Movement that implies success before observed verification
+  assumptions:
+    - Demo workflow will use deterministic server-side timing while live mode uses observed Railway state.
+  unknowns:
+    - Live API latency distribution before integration testing
+  risks:
+    - Over-animating the rail could make operational feedback feel theatrical.
+  asset_status:
+    - Project screenshots and demo video remain TO_BE_CREATED after QA.
+  acceptance:
+    - Motion explains causality, preserves layout, respects reduced motion, and stays within performance budget.
+  user_decisions_required: []
+  changed_files:
+    - .nocturn/02-art-direction.md
+    - .nocturn/02-art-direction-handoff.yaml
+  next_gate: MOTION_CONTRACT
+  production_allowed: false

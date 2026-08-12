@@ -1,0 +1,29 @@
+[
+  {
+    "id": "R01-C01",
+    "statement": "The official archive describes information layered by importance and operator actions communicated immediately.",
+    "status": "verified",
+    "evidence": ["01-evidence/source-record.md"],
+    "confidence": 0.9,
+    "scope": "official archive text; viewport-independent",
+    "reviewedBy": "reference-scan-evidence-review"
+  },
+  {
+    "id": "R01-C02",
+    "statement": "An ordered operational sequence with explicit downstream consequences is transferable to a lifecycle rail.",
+    "status": "inferred",
+    "evidence": ["01-evidence/source-record.md"],
+    "confidence": 0.74,
+    "scope": "adaptation principle only",
+    "reviewedBy": "reference-scan-evidence-review"
+  },
+  {
+    "id": "R01-C03",
+    "statement": "The reference's exact responsive layout, selectors, styling, timing, and motion behavior are known.",
+    "status": "unknown",
+    "evidence": ["01-evidence/source-record.md#access-limitation"],
+    "confidence": 0,
+    "scope": "1440x900 and 390x844",
+    "reviewedBy": "reference-scan-evidence-review"
+  }
+]

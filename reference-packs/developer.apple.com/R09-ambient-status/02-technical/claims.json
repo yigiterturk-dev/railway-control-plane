@@ -1,0 +1,29 @@
+[
+  {
+    "id": "R09-C01",
+    "statement": "Apple's official award rationale recognizes Flighty for placing key information where and when needed and for using established airport-design conventions.",
+    "status": "verified",
+    "evidence": ["01-evidence/source-record.md"],
+    "confidence": 0.93,
+    "scope": "official award rationale; viewport-independent",
+    "reviewedBy": "reference-scan-evidence-review"
+  },
+  {
+    "id": "R09-C02",
+    "statement": "A compact, persistent service-status cue can reduce repeated navigation in Railway Control Plane.",
+    "status": "inferred",
+    "evidence": ["01-evidence/source-record.md"],
+    "confidence": 0.71,
+    "scope": "desktop/mobile web adaptation principle",
+    "reviewedBy": "reference-scan-evidence-review"
+  },
+  {
+    "id": "R09-C03",
+    "statement": "Flighty's Apple-native components, maps, Dynamic Island behavior, or exact motion transfer directly to desktop web.",
+    "status": "unknown",
+    "evidence": ["01-evidence/source-record.md#access-limitation"],
+    "confidence": 0,
+    "scope": "cross-platform transfer",
+    "reviewedBy": "reference-scan-evidence-review"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "protocolVersion": "NUSP-1.0",
+  "projectSlug": "railway-control-plane",
+  "referenceCardId": "R09",
+  "referencePoolVersion": "1.0.0",
+  "referenceUrl": "https://developer.apple.com/design/awards/2023/",
+  "target": "ambient-volatile-status-and-wayfinding-semantics",
+  "capturedAt": "2026-08-12T22:15:00+03:00",
+  "viewports": ["1440x900", "390x844"],
+  "assetPolicy": "metadata-only",
+  "productionCodeAllowed": false,
+  "reviewStatus": "pass-with-warnings",
+  "knownLimitations": ["award-page-not-product-ui", "no-live-browser-capture", "mobile-native-transfer-risk", "desktop-web-behavior-unknown"]
+}

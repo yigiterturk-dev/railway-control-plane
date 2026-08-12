@@ -1,0 +1,88 @@
+handoff:
+  protocol_version: NUSP-1.0
+  project_slug: railway-control-plane
+  from_role: reference-scan
+  to_role: art-direction
+  purpose: Supply a bounded, evidence-audited principle dossier for four approved operational references without transferring reference assets or implementation details.
+  canonical_inputs:
+    - path: projects/railway-control-plane/brief/project-dna.yaml
+      version: 1.0.0
+    - path: projects/railway-control-plane/brief/core-brief.md
+      version: 1.0.0
+    - path: projects/railway-control-plane/research/reference-pool.yaml
+      version: 1.0.0
+    - path: .nocturn/01-reference-dossier.md
+      version: 1.0.0
+  evidence_ids:
+    - R01-C01
+    - R01-C02
+    - R01-C03
+    - R02-C01
+    - R02-C02
+    - R02-C03
+    - R06-C01
+    - R06-C02
+    - R06-C03
+    - R09-C01
+    - R09-C02
+    - R09-C03
+  approved_decisions:
+    - Use only abstract principles from R01 ordered sequencing, R02 ledger taxonomy, R06 verified completion, and R09 ambient status.
+    - Preserve Project DNA as the source of the original visible thesis.
+  rejected_decisions:
+    - Literal or close visual adaptation of any reference.
+    - Reference timing, easing, breakpoint, component, table, icon, copy, palette, or spatial convention.
+    - Railway visual identity or dashboard imitation.
+    - Optimistic success and hidden retries.
+  locked:
+    - Workflow state is the primary composition.
+    - Metadata-only reference asset policy.
+    - Production code is not authorized.
+    - Every visible state must map to actual workflow truth.
+  managed:
+    - Original composition alternatives.
+    - Original responsive rail and ledger treatment.
+    - Original ambient-status and recovery presentation.
+  open:
+    - Desktop and mobile composition.
+    - Rail geometry and responsive collapse.
+    - Ledger row anatomy and disclosure.
+    - Typography, spacing, and original visual language.
+  forbidden:
+    - Downloading, retaining, hotlinking, recreating, or transferring reference assets.
+    - Copying CSS, DOM, layouts, branded copy, visual signatures, or code.
+    - Treating archive recognition as accessibility, performance, or business-outcome proof.
+    - Using unverified reference implementation details.
+  assumptions:
+    - Official archive text is sufficient for principle-level evidence, not implementation-level evidence.
+    - Project-owned demo behavior will later supply state and recovery proof.
+  unknowns:
+    - Exact responsive, accessibility, layout, animation, and implementation details for all four references.
+    - Current live-project availability for the industrial references.
+    - Desktop-web transferability of Flighty's native-mobile details.
+  risks:
+    - Adjacent industrial references could pull the design toward a literal control-room aesthetic.
+    - Flighty could pull the design toward Apple-native mimicry.
+    - Missing live captures could invite unsupported visual inference; this is forbidden.
+  asset_status:
+    - Reference assets: forbidden and not transferred.
+    - Project screenshots: TO_BE_CREATED from verified local build.
+    - Project wordmark: TO_BE_CREATED if later approved.
+    - Demo video: TO_BE_CREATED from verified build.
+  acceptance:
+    - Art Direction proposes materially distinct original directions from Project DNA.
+    - Each direction uses principles rather than visible expressions from references.
+    - Similarity Guard checks against R01, R02, R06, R09 and anti-references A01-A03.
+    - No production code is written before later gate authority.
+  user_decisions_required:
+    - Select one original interface direction after Art Direction presents alternatives.
+  changed_files:
+    - .nocturn/01-reference-dossier.md
+    - .nocturn/01-reference-scan-handoff.yaml
+    - reference-packs/awards.ixda.org/R01-lifecycle-sequence/
+    - reference-packs/awards.ixda.org/R02-event-error-ledger/
+    - reference-packs/ux-design-awards.com/R06-completion-loop/
+    - reference-packs/developer.apple.com/R09-ambient-status/
+    - docs/delivery/system-state.yaml
+  next_gate: G2_ART_DIRECTION
+  production_allowed: false

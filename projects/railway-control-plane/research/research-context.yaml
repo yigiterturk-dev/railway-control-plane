@@ -1,0 +1,37 @@
+research_context:
+  protocol_version: NUSP-1.0
+  project_slug: railway-control-plane
+  canonical_inputs:
+    project_dna_version: 1.0.0
+    core_brief_version: 1.0.0
+  project_name: Railway Control Plane
+  project_type: web-app
+  sector: developer tools / cloud infrastructure
+  business_activity: portfolio-grade operational control surface for Railway services
+  audience:
+    - software engineers
+    - senior engineering interviewers
+    - developer-tools product teams
+  brand_personality:
+    - precise
+    - accountable
+    - calm under failure
+    - technically legible
+  color_distribution:
+    background_and_surface: 82%
+    text_and_rules: 14%
+    signal_green: 3%
+    warning_and_error: 1%
+  forbidden_patterns:
+    - Railway interface imitation
+    - generic SaaS dashboard cards
+    - decorative terminals
+    - purple or neon AI aesthetics
+  strategic_insight: Opaque cloud operations become trustworthy when expressed as observable, recoverable state transitions.
+  visual_thesis: A precise operational ledger organized around one visible lifecycle rail.
+  signature_opportunity: Stateful action rail that resolves into an immutable-looking activity ledger.
+  required_decades: [2010s, 2020s]
+  perspectives: [same-sector, adjacent-sector, distant-analogy]
+  desired_candidates: 20
+  asset_policy: metadata-only
+  production_allowed: false

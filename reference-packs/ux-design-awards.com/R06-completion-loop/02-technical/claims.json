@@ -1,0 +1,29 @@
+[
+  {
+    "id": "R06-C01",
+    "statement": "The official case describes filtering complex data, prioritizing high-impact action, and supporting confidence in accurate completion.",
+    "status": "verified",
+    "evidence": ["01-evidence/source-record.md"],
+    "confidence": 0.9,
+    "scope": "official archive text; viewport-independent",
+    "reviewedBy": "reference-scan-evidence-review"
+  },
+  {
+    "id": "R06-C02",
+    "statement": "Anomaly, evidence, prioritized action, and verified completion form a useful operational loop for failed or retried deployments.",
+    "status": "inferred",
+    "evidence": ["01-evidence/source-record.md"],
+    "confidence": 0.82,
+    "scope": "adaptation principle only",
+    "reviewedBy": "reference-scan-evidence-review"
+  },
+  {
+    "id": "R06-C03",
+    "statement": "The reference's exact success confirmation, retry treatment, responsive behavior, and accessibility implementation are known.",
+    "status": "unknown",
+    "evidence": ["01-evidence/source-record.md#access-limitation"],
+    "confidence": 0,
+    "scope": "1440x900 and 390x844",
+    "reviewedBy": "reference-scan-evidence-review"
+  }
+]
