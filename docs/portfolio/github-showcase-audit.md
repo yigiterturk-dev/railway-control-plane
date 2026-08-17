@@ -1,6 +1,6 @@
 # GitHub Showcase Audit - Initial Public Inventory
 
-Public profile: `moriana55`
+Public profile: `yigiterturk-dev`
 
 Observed on 2026-08-12 through GitHub's public repository API. This is an initial metadata audit; code-level claims require repository-by-repository verification before publication.
 
@@ -58,7 +58,7 @@ Every showcase repository must contain:
 
 ## Profile-level standard
 
-- Create the profile repository `moriana55/moriana55` with a concise English README.
+- Create the profile repository `yigiterturk-dev/yigiterturk-dev` with a concise English README.
 - Headline: product-minded full-stack engineer focused on operational software, data systems, and developer experience.
 - Lead with shipped proof, not a long technology icon wall.
 - Pin exactly six repositories with distinct proof categories.
@@ -67,6 +67,6 @@ Every showcase repository must contain:
 
 ## Current blockers
 
-- GitHub CLI authentication for `moriana55` is expired; remote writes, repo creation, metadata updates, and pin changes are blocked until reauthentication.
+- GitHub CLI authentication for `yigiterturk-dev` is expired; remote writes, repo creation, metadata updates, and pin changes are blocked until reauthentication.
 - Public metadata alone cannot verify README quality, test coverage, security posture, or personal contribution.
 - Existing projects must be mapped to local working copies or cloned into an isolated audit workspace before edits.

@@ -4,7 +4,7 @@
 
 **A safe service lifecycle UI that turns opaque cloud commands into verified, auditable workflows.**
 
-[![CI](https://github.com/moriana55/railway-control-plane/actions/workflows/ci.yml/badge.svg)](https://github.com/moriana55/railway-control-plane/actions/workflows/ci.yml)
+[![CI](https://github.com/yigiterturk-dev/railway-control-plane/actions/workflows/ci.yml/badge.svg)](https://github.com/yigiterturk-dev/railway-control-plane/actions/workflows/ci.yml)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-20242a?logo=typescript)
 ![Tests](https://img.shields.io/badge/workflow_tests-3%2F3-27875d)
 ![License](https://img.shields.io/badge/license-MIT-20242a)
@@ -65,7 +65,7 @@ See [architecture](docs/architecture.md), [threat model](docs/threat-model.md), 
 Requirements: Node.js 20 or newer.
 
 ```bash
-git clone https://github.com/moriana55/railway-control-plane.git
+git clone https://github.com/yigiterturk-dev/railway-control-plane.git
 cd railway-control-plane
 npm install
 cp .env.example .env
